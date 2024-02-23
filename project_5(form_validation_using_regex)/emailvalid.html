@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function ValidEmail(email){
+
+        var emailcheck=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        // test (which test the patern against the given regex)
+        var res=emailcheck.test(email)
+       if(res){
+        document.write(email + " Is Valid! ")
+       }
+       else{
+        document.write(email + " Is Not Valid! ")
+       }
+
+       }
+
+       ValidEmail('yahobaba12@yahoo.com')
+    </script>
+</body>
+</html>
